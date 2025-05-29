@@ -1,0 +1,113 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "username": "user1",
+      "password": "user123",
+      "role": "user",
+      "cart": [
+        {
+          "id": "fd1e",
+          "title": "T-Shirts",
+          "price": "5008",
+          "description": "Men's Stylish & Fashionable Trendy Good Looking Long Sleeve Casual Shirt By Tamanna eExport",
+          "image": "https://img.drz.lazcdn.com/static/bd/p/9c9501762b424783140a2038084cb29c.jpg_200x200q80.avif"
+        }
+      ]
+    },
+    {
+      "id": "532c",
+      "username": "rakibul",
+      "password": "1234",
+      "role": "user",
+      "cart": [
+        {
+          "id": "fd1e",
+          "title": "T-Shirts",
+          "price": "5008",
+          "description": "Men's Stylish & Fashionable Trendy Good Looking Long Sleeve Casual Shirt By Tamanna eExport",
+          "image": "https://img.drz.lazcdn.com/static/bd/p/9c9501762b424783140a2038084cb29c.jpg_200x200q80.avif"
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "fd1e",
+      "title": "T-Shirts",
+      "price": "5008",
+      "description": "Men's Stylish & Fashionable Trendy Good Looking Long Sleeve Casual Shirt By Tamanna eExport",
+      "image": "https://img.drz.lazcdn.com/static/bd/p/9c9501762b424783140a2038084cb29c.jpg_200x200q80.avif"
+    }
+  ],
+  "orders": [
+    {
+      "id": "3edd",
+      "userId": "2",
+      "info": {
+        "name": "Rakibul islam",
+        "phone": "01768726911",
+        "address": "badda,Dhaka"
+      },
+      "items": [
+        {
+          "id": "fd1e",
+          "title": "T-Shirts",
+          "price": "5008",
+          "description": "Men's Stylish & Fashionable Trendy Good Looking Long Sleeve Casual Shirt By Tamanna eExport",
+          "image": "https://img.drz.lazcdn.com/static/bd/p/9c9501762b424783140a2038084cb29c.jpg_200x200q80.avif"
+        }
+      ],
+      "date": "2025-05-22T07:22:23.562Z",
+      "status": "Processing"
+    },
+    {
+      "id": "c54f",
+      "userId": "2",
+      "info": {
+        "name": "Rakibul Islam",
+        "phone": "01768726911",
+        "address": "Dhaka\n704"
+      },
+      "items": [
+        {
+          "id": "fd1e",
+          "title": "T-Shirts",
+          "price": "5008",
+          "description": "Men's Stylish & Fashionable Trendy Good Looking Long Sleeve Casual Shirt By Tamanna eExport",
+          "image": "https://img.drz.lazcdn.com/static/bd/p/9c9501762b424783140a2038084cb29c.jpg_200x200q80.avif",
+          "quantity": 2
+        }
+      ],
+      "date": "2025-05-22T07:27:51.018Z",
+      "status": "Pending"
+    },
+    {
+      "id": "95ca",
+      "userId": "2",
+      "info": {
+        "name": "Rakibul Islam",
+        "phone": "01768726911",
+        "address": "Dhaka\n704"
+      },
+      "items": [
+        {
+          "id": "fd1e",
+          "title": "T-Shirts",
+          "price": "5008",
+          "description": "Men's Stylish & Fashionable Trendy Good Looking Long Sleeve Casual Shirt By Tamanna eExport",
+          "image": "https://img.drz.lazcdn.com/static/bd/p/9c9501762b424783140a2038084cb29c.jpg_200x200q80.avif",
+          "quantity": 1
+        }
+      ],
+      "date": "2025-05-22T07:31:23.057Z",
+      "status": "Pending"
+    }
+  ]
+}
