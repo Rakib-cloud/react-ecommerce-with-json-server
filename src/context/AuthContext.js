@@ -1,8 +1,8 @@
-import React, { createContext, useState, useEffect } from "react";
+import React, {createContext, useState, useEffect} from "react";
 
 export const AuthContext = createContext();
 
-export const AuthProvider = ({ children }) => {
+export const AuthProvider = ({children}) => {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true); // 👈 Added
 
@@ -24,10 +24,12 @@ export const AuthProvider = ({ children }) => {
         localStorage.removeItem("authUser");
     };
 
-    if (loading) return <div>Loading...</div>; // 👈 Optional loading UI
+    if (loading) return <div className="flex items-center justify-center h-screen">
+        <p>Loading...</p>
+    </div>;
 
     return (
-        <AuthContext.Provider value={{ user, login, logout }}>
+        <AuthContext.Provider value={{user, login, logout}}>
             {children}
         </AuthContext.Provider>
     );

@@ -1,13 +1,15 @@
 import React, { useContext } from "react";
 import { AuthContext } from "../../context/AuthContext";
 import axios from "axios";
+import { useNavigate} from "react-router-dom";
 
 const ProductCard = ({ product }) => {
     const { user, login } = useContext(AuthContext);
-
+    const navigate = useNavigate();
     const handleAddToCart = async () => {
         if (!user) {
             alert("Please login first to add to cart.");
+            navigate('/login', { replace: true });
             return;
         }
 
@@ -27,7 +29,6 @@ const ProductCard = ({ product }) => {
             console.error("Error adding to cart", error);
         }
     };
-
     return (
         <div className="bg-white shadow rounded p-4">
             <img

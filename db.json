@@ -35,6 +35,35 @@
           "image": "https://img.drz.lazcdn.com/static/bd/p/9c9501762b424783140a2038084cb29c.jpg_200x200q80.avif"
         }
       ]
+    },
+    {
+      "id": "4a9b",
+      "username": "user45",
+      "password": "1234",
+      "role": "user",
+      "cart": [
+        {
+          "id": "29b2",
+          "title": "Pusti Best Leaf Tea - 50gm",
+          "price": "29",
+          "description": "Very good tea.",
+          "image": "https://lzd-u.slatic.net/71adcc234d854064bd2babe6d7836d76_26d41f3950dc4cbf8730a9fea4461087.jpg"
+        },
+        {
+          "id": "29b2",
+          "title": "Pusti Best Leaf Tea - 50gm",
+          "price": "29",
+          "description": "Very good tea.",
+          "image": "https://lzd-u.slatic.net/71adcc234d854064bd2babe6d7836d76_26d41f3950dc4cbf8730a9fea4461087.jpg"
+        },
+        {
+          "id": "fd1e",
+          "title": "T-Shirts",
+          "price": "5008",
+          "description": "Men's Stylish & Fashionable Trendy Good Looking Long Sleeve Casual Shirt By Tamanna eExport",
+          "image": "https://img.drz.lazcdn.com/static/bd/p/9c9501762b424783140a2038084cb29c.jpg_200x200q80.avif"
+        }
+      ]
     }
   ],
   "products": [
@@ -44,6 +73,13 @@
       "price": "5008",
       "description": "Men's Stylish & Fashionable Trendy Good Looking Long Sleeve Casual Shirt By Tamanna eExport",
       "image": "https://img.drz.lazcdn.com/static/bd/p/9c9501762b424783140a2038084cb29c.jpg_200x200q80.avif"
+    },
+    {
+      "id": "29b2",
+      "title": "Pusti Best Leaf Tea - 50gm",
+      "price": "29",
+      "description": "Very good tea.",
+      "image": "https://lzd-u.slatic.net/71adcc234d854064bd2babe6d7836d76_26d41f3950dc4cbf8730a9fea4461087.jpg"
     }
   ],
   "orders": [
@@ -108,6 +144,27 @@
       ],
       "date": "2025-05-22T07:31:23.057Z",
       "status": "Pending"
+    },
+    {
+      "id": "6dac",
+      "userId": "4a9b",
+      "info": {
+        "name": "Rakibul islam ",
+        "phone": "01768726911",
+        "address": "Badda,Dhaka"
+      },
+      "items": [
+        {
+          "id": "fd1e",
+          "title": "T-Shirts",
+          "price": "5008",
+          "description": "Men's Stylish & Fashionable Trendy Good Looking Long Sleeve Casual Shirt By Tamanna eExport",
+          "image": "https://img.drz.lazcdn.com/static/bd/p/9c9501762b424783140a2038084cb29c.jpg_200x200q80.avif",
+          "quantity": 3
+        }
+      ],
+      "date": "2025-05-30T04:04:01.810Z",
+      "status": "Cancelled"
     }
   ]
 }
