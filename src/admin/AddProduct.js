@@ -17,9 +17,16 @@ const AddProduct = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post("http://localhost:5000/products", product);
-            alert("Product added successfully!");
-            setProduct({ title: "", price: "", description: "", image: "" });
+           const response= await axios.post("http://localhost:5000/products", product);
+           console.log('response',response)
+            if(response?.status==201){
+                alert(`${response?.data?.title} product added successfully!`);
+                setProduct({ title: "", price: "", description: "", image: "" });
+            }else {
+                alert(response?.statusText);
+            }
+
+
         } catch (err) {
             alert("Error adding product!");
         }

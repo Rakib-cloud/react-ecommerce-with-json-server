@@ -61,8 +61,8 @@ const ProductList = () => {
                     </tr>
                     </thead>
                     <tbody>
-                    {products.map((prod) => (
-                        <tr key={prod.id}>
+                    {products.map((prod,index) => (
+                        <tr key={index}>
                             <td className="border px-4 py-2">{prod.id}</td>
                             <td className="border px-4 py-2">{prod.title}</td>
                             <td className="border px-4 py-2">${prod.price}</td>
