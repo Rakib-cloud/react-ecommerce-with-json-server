@@ -11,7 +11,7 @@ const Register = () => {
         e.preventDefault();
 
         // Check if username already exists
-        const resCheck = await fetch(`http://localhost:5000/users?username=${username}`);
+        const resCheck = await fetch(`http://localhost:3000/users?username=${username}`);
         const existingUser = await resCheck.json();
         if (existingUser.length > 0) {
             setError("Username already exists");
@@ -19,7 +19,7 @@ const Register = () => {
         }
 
         // Register new user with role user
-        const res = await fetch(`http://localhost:5000/users`, {
+        const res = await fetch(`http://localhost:3000/users`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ username, password, role: "user", cart: [] }),

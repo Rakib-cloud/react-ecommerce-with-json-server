@@ -6,7 +6,7 @@ const AdminUserListPage = () => {
     const [users, setUsers] = useState([]);
 
     useEffect(() => {
-        axios.get("http://localhost:5000/users")
+        axios.get("http://localhost:3000/users")
             .then(res => setUsers(res.data))
             .catch(err => console.error("Error fetching users", err));
     }, []);

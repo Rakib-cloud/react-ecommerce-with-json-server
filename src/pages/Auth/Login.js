@@ -14,7 +14,7 @@ const Login = () => {
         e.preventDefault();
 
         // fetch users from JSON server
-        const res = await fetch(`http://localhost:5000/users?username=${username}&password=${password}`);
+        const res = await fetch(`http://localhost:3000/users?username=${username}&password=${password}`);
         const data = await res.json();
         console.log('data is now',data)
 

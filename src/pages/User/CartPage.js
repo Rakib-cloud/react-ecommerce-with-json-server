@@ -24,7 +24,7 @@ const CartPage = () => {
 
     const updateCartOnServer = async (updatedCart) => {
         try {
-            await axios.patch(`http://localhost:5000/users/${user.id}`, {
+            await axios.patch(`http://localhost:3000/users/${user.id}`, {
                 cart: updatedCart,
             });
             const updatedUser = { ...user, cart: updatedCart };
@@ -76,7 +76,7 @@ const CartPage = () => {
                 status: "Pending",
             };
 
-            await axios.post("http://localhost:5000/orders", newOrder);
+            await axios.post("http://localhost:3000/orders", newOrder);
             await updateCartOnServer([]);
 
             setCheckoutInfo({ name: "", phone: "", address: "" });

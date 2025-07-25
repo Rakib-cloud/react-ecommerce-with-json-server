@@ -10,12 +10,6 @@ const UserHomePage = () => {
                 <ContentWrapper>
                     <Products/>
                 </ContentWrapper>
-                <ContentWrapper>
-                    <Products/>
-                </ContentWrapper>
-                <ContentWrapper>
-                    <Products/>
-                </ContentWrapper>
 
             </UserHomeLayout>
         </div>

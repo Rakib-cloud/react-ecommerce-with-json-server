@@ -17,7 +17,7 @@ const ProductCard = ({ product }) => {
             const updatedCart = [...(user.cart || []), product];
 
             // Update cart in db.json
-            await axios.patch(`http://localhost:5000/users/${user.id}`, {
+            await axios.patch(`http://localhost:3000/users/${user.id}`, {
                 cart: updatedCart,
             });
 

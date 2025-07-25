@@ -9,7 +9,7 @@ const ProductList = () => {
 
     const fetchProducts = async () => {
         try {
-            const res = await axios.get("http://localhost:5000/products");
+            const res = await axios.get("http://localhost:3000/products");
 
             setProducts(res.data);
         } catch (error) {
@@ -23,7 +23,7 @@ const ProductList = () => {
 
     const handleDelete = async (id) => {
         if (window.confirm("Delete this product?")) {
-            await axios.delete(`http://localhost:5000/products/${id}`);
+            await axios.delete(`http://localhost:3000/products/${id}`);
             fetchProducts();
         }
     };
@@ -37,7 +37,7 @@ const ProductList = () => {
         e.preventDefault();
         try {
             await axios.put(
-                `http://localhost:5000/products/${editingProduct.id}`,
+                `http://localhost:3000/products/${editingProduct.id}`,
                 editingProduct
             );
             setShowModal(false);

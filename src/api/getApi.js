@@ -7,6 +7,7 @@ export const getData = async (endpoint) => {
             throw new Error(`GET ${endpoint} failed with status ${response.status}`);
         }
         const data = await response.json();
+        // console.log(`Fetched data from ${endpoint}:`, response);
         return data;
     } catch (err) {
         console.error(`Error fetching ${endpoint}:`, err);

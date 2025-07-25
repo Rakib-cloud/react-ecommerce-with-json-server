@@ -17,6 +17,7 @@ const HomeProducts = () => {
         const fetchProducts = async () => {
             try {
                 const data = await getData('/products');
+                console.log('data',data)
                 setProducts(data);
             } catch (err) {
                 console.error('Failed to load products');

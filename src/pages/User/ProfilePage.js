@@ -9,7 +9,7 @@ const ProfilePage = () => {
 
     useEffect(() => {
         if (user?.id) {
-            axios.get(`http://localhost:5000/orders?userId=${user.id}`)
+            axios.get(`http://localhost:3000/orders?userId=${user.id}`)
                 .then(res => setOrders(res.data))
                 .catch(err => console.error("Error fetching orders", err));
         }

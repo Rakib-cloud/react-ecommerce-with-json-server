@@ -6,13 +6,13 @@ const AdminOrderListPage = () => {
     const [orders, setOrders] = useState([]);
 
     useEffect(() => {
-        axios.get("http://localhost:5000/orders")
+        axios.get("http://localhost:3000/orders")
             .then(res => setOrders(res.data))
             .catch(err => console.error("Error fetching orders", err));
     }, []);
 
     const updateStatus = (orderId, newStatus) => {
-        axios.patch(`http://localhost:5000/orders/${orderId}`, { status: newStatus })
+        axios.patch(`http://localhost:3000/orders/${orderId}`, { status: newStatus })
             .then(() => {
                 setOrders(prev =>
                     prev.map(order => order.id === orderId ? { ...order, status: newStatus } : order)
